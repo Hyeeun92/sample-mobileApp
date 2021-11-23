@@ -1,0 +1,7 @@
+{
+  "name": "mobildAppSamp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
