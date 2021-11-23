@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "dorset-team-3-ticketing": {
+      "hosting": {
+        "app": [
+          "dorset-team-3-ticketing"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "dorset-team-3-ticketing"
+  }
+}

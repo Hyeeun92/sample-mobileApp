@@ -25,3 +25,31 @@
 #container a {
   text-decoration: none;
 }
+
+.background-page {
+  .image-card {
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin:0;
+    width:33%;
+    
+    
+  }
+  .image{
+    width:100%;
+    height:100%;
+  }
+
+  .title {
+    position: absolute;
+    top: 70%;
+    font-size: 2.0em;
+    width: 100%;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+  }
+}
