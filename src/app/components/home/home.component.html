@@ -6,11 +6,11 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="background-page">
+<ion-content class="home-page">
 
   <ion-item *ngFor="let event of events">
     
-    <ion-card id="image-card">
+    <ion-card id="image-card" [routerLink]="['/eventdetail', event.id]">>
       <img class="image" src="{{event.image}}" style="align-items: center"/>
       <div class="title">{{event.title}}</div>
     </ion-card>
