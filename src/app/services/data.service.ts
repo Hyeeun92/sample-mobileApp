@@ -18,17 +18,16 @@ export interface Event {
 })
 export class DataService {
 
-  private id = new BehaviorSubject('default message');
-
   constructor(private firestore: Firestore) { }
+
   getEvents(): Observable<Event[]> {
     const eventRef = collection(this.firestore, 'whatson');
     return collectionData(eventRef, { idField: 'id' }) as Observable<Event[]>;
   }
 
-  getEvetnById(id): Observable<Event> {
-    const eventRef = doc(this.firestore, `eventdetail/${id}`);
-    return docData(eventRef, {idField: 'id'})as Observable<Event>;
+  getEventById(id): Observable<Event> {
+    const eventRef = doc(this.firestore, `whatson/${id}`);
+    return docData(eventRef, { idField: 'id' }) as Observable<Event>;
   }
 
 
